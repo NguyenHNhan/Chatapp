@@ -1,0 +1,204 @@
+
+.master-layout {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.sidebar-left {
+    width: 25%;
+    border-left: 1px solid rgb(231, 230, 230);
+    border-right: 1px solid rgb(231, 230, 230);
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.sidebar-right  {
+    width: 75%;
+
+    background: linear-gradient(135deg, #dafcd6 0%, #5ca853 50%, #dafcd6 100%);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.messageblock {
+    background-color: rgb(250, 250, 250);
+    height: 70px;
+    border-radius: 0.5rem;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row; 
+    align-items: center;
+}
+.messageblock:hover {
+    background-color: rgba(218, 218, 218, 0.384);
+}
+
+.select {
+    background-color:  rgb(51,144,236);
+}
+
+.select:hover  {
+    background-color:  rgb(51,144,236);
+}
+.massageblock-right{
+    flex: auto;
+    padding-right: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.avt {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 0.5rem;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.infor :nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.infor-name{
+    font-weight: bold;
+    
+    margin-right: 0.5rem;
+}
+.infor-icon{
+    color: rgb(32, 72, 107);
+    display: flex;
+}
+.infor-date{
+    color: rgb(196, 196, 196);
+    font-size: small;
+}
+.subtitle{
+    color: rgb(117, 116, 116);
+}
+.chatlist {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    color: rgba(180, 179, 179, 0.815);
+
+}
+.search :nth-child(1){
+    margin: 0 0.5rem;
+    color: rgb(151, 149, 149);
+}
+.search :nth-child(2){
+    border: 0.5px rgba(196, 196, 196, 0.589) solid;
+    border-radius: 50px;
+    padding: 0.3rem 1rem;
+    width: 100%;
+}
+
+.headermessage{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.headermessage-right{
+    color: black !important;
+    flex: auto;
+}
+
+.headermessage .avt{
+    height: 3rem;
+    width: 3rem;
+}
+
+.headermessage-infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messagetextbox{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 9999;
+    
+}
+
+.inputcontent{
+    width: 85%;
+    border: none;
+    outline: none; 
+}
+.btnsent{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(168, 166, 166);
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.footer-message{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.body-message {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bodymessage{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.message-line{
+    margin: 0.4rem;
+}
+
+.message{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 0.3rem 0.8rem;
+    /* display: inline-block;  */
+    max-width: 85%; 
+    float: right;
+}
+.message.left{
+    float: left;
+}
+
+.message-time{
+    float: right;
+    bottom: -0.5rem;
+    margin-left: 0.5rem;
+    position: relative;
+    color: gray;
+    font-size: small;
+}
